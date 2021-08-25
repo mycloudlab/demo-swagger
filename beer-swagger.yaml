@@ -75,6 +75,35 @@ paths:
                                 type: array
                                 items:
                                     $ref: '#/components/schemas/Beer'
+                            examples:
+                                beers:
+                                    value:
+                                        -
+                                            name: some text
+                                            country: some text
+                                            type: some text
+                                            rating: 35.12
+                                            status: some text
+                                        -
+                                            name: some text
+                                            country: some text
+                                            type: some text
+                                            rating: 55.85
+                                            status: some text
+                                beers2:
+                                    value:
+                                        -
+                                            name: exemplo 2
+                                            country: some text
+                                            type: some text
+                                            rating: 61.19
+                                            status: some text
+                                        -
+                                            name: some text
+                                            country: some text
+                                            type: some text
+                                            rating: 77.11
+                                            status: some text
                     description: Array of beers
             operationId: ListBeers
             summary: List beers within catalog
@@ -105,6 +134,12 @@ components:
                 status:
                     description: Stock status
                     type: string
+            example:
+                name: some text
+                country: some text
+                type: some text
+                rating: 75.88
+                status: some text
     securitySchemes:
         api-key:
             type: apiKey
